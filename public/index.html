@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="stylesheet.css">
+        <title>.fm</title>
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <script type = "text/javascript" src="scripts/content-handling.js"></script>  
     </head>
     <body>
         <div class="container">
-            <img class="pikel" src="assets/pickle.png" alt="this is just a picture of a pickle, ive only got this here to test the site, i dont know why youre looking at it right now">
-            <h3>This is just a pickel why are you here</h3>
+            <div class="sidebar">
+                <div class="about">
+                    <svg onclick="changeTab('about')" xmlns="http://www.w3.org/2000/svg" class="contentIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                      </svg>
+                </div>
+                <div class="projects">
+                    <svg onclick="changeTab('projects')" xmlns="http://www.w3.org/2000/svg" class="contentIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                        <path d="M10 13l-1 2l1 2" />
+                        <path d="M14 13l1 2l-1 2" />
+                      </svg>
+
+                </div>
+                <div class="contact">
+                    <svg onclick="changeTab('contact')" xmlns="http://www.w3.org/2000/svg" class="contentIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                      </svg>
+
+                </div>
+            </div>
+
+            <div class="content" id="initial">
+                <img src="assets/pickle.jpg" alt="">
+            </div>
+
+
+            <div class="content" id="about">
+                <img src="assets/dwane.jpg" alt="">
+            </div>
+
+
+            <div class="content" id="projects">
+                <img src="assets/timmy.jpg" alt="">
+            </div>
+
+
+            <div class="content" id="contact">
+                <h2>Why are you here?</h2>
+            </div>
+
+
+
+
+
         </div>
-        
+
+
+        <script>
+            document.getElementById("initial").click();
+        </script>
     </body>
 </html>
