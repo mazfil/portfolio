@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.sidebar{
+  width: max-content;
+  height: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.content{
+  display: none;
+  width: 100%;
+  text-align: center;
+  height: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about, .projects, .contact {
+  display: flex;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 32px 0px 32px 0px;
+}
+
+#initial{
+  display: block;
+}
+
