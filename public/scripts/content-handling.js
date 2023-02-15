@@ -6,5 +6,5 @@ function changeTab(tab){
         content[i].style.display = "none";
     }
 
-    document.getElementById(tab).style.display = "block";
+    document.getElementById(tab).style.display = "flex";
 }
