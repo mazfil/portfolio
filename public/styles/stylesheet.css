@@ -11,49 +11,71 @@ html{
   top: 0; left: 0; right: 0; bottom: 0;
 }
 
-.sidebar{
-  width: max-content;
-  height: max-content;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.content{
-  display: none;
-  width: 80%;
-  height: 80%;
-  text-align: center;
-  justify-content: center;
+.tabs{
   margin: auto;
-  background-color: #CCC;
+  width: auto;
+  height: auto;
 
 }
 
+.tab{
+  margin: 4px;
+  border-radius: 8px;
+  border: solid;
+  border-width: 2px;
+  border-color: #cccccc;
+  background-color: #eeeeee;
+}
 
-
-
-#initial{
+.row{
   display: flex;
 }
 
+.blink{
+  display: flex;
+  width: auto;
+  height: auto;
+}
 
-.folder{
+.tlink{
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+
+
+.tiny{
+
   width: 64px;
-  height: 56px;
-  display: inline;
-  padding-top: 10px;
+  height: 64px;
 }
 
-p{
-  display: inline;
-  height: 100%;
-  vertical-align: middle;
-  font-size: 24px;
-  padding-left: 5px;
+.tiny_blank{
+  width: 64px;
+  height: 64px;
+  border-color: white;
+  background-color: white;
 }
 
-td{
-  vertical-align: middle;
-  display: flex;
-  padding-top: 24px;
+.one_one{
+  width: 140px;
+  height: 140px;
 }
+
+.two_one{
+  width: 292px;
+  height: 140px;
+}
+
+
+.two_two{
+  width: 292px;
+  height: 292px;
+}
+
+.one_two{
+  width: 140px;
+  height: 292px;
+}
+
