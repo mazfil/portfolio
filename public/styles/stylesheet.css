@@ -1,4 +1,5 @@
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 html{
   font-family: 'Roboto mono';
 }
@@ -10,7 +11,6 @@ body{
 
 .container{
   display: flex;
-  width: 100vw;
   top: 0; left: 0; right: 0; bottom: 0;
   margin-top: 200px;
   color: #E9ECF1;
@@ -22,6 +22,7 @@ body{
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding: 8px;
 }
 
 .info a{
@@ -44,6 +45,12 @@ body{
   border-radius: 16px;
 }
 
+.button{
+  background-color: #23232B;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
 
 .links svg{
   padding-left: 4px;
@@ -54,6 +61,7 @@ body{
   background-color: #36373F;
   border-radius: 16px;
   padding: 10px 10px 10px 10px;
+  transition: 0.5s;
 }
 
 
@@ -80,24 +88,41 @@ a{
 .pfp{
   height: 128px;
   width: 128px;
-  margin-top: -96px;
-  margin-left: 48px;
+  margin-top: -92px;
+  margin-left: 40px;
   border-radius: 16px;
+  border: #23232B solid 8px;
 }
 
 #about{
   display: block;
 }
 
+.date{
+  color: #9397A2;
+}
 
 .tab{
   display: none;
 }
 
-.bottompadding{
-  height: 256px;
+.tabs{
+  height: 1000px;
 }
 
+.nameAndPronouns{
+  display: flex;
+  align-items: baseline;
+}
+
+#pronouns{
+  color: #9397A2;
+  padding-left: 0.25em;
+}
+
+.description{
+  margin-top: 0px;
+}
 
 input, textarea{
   width: 80%;
@@ -113,11 +138,13 @@ input, textarea{
   font-family: 'Roboto mono';
   outline: none;
   padding: 0.25em;
+  transition: 0.5s;
 }
 
 input:focus, textarea:focus{
   background-color: #36373F;
 }
+
 
 textarea{
   height: 8em;
@@ -138,8 +165,49 @@ input[type=submit]:hover{
 
 .tab img{
   display: flex;
-  width: 80%;
+  width: 100%;
   padding: 10% 0% 10% 0%;
   height: auto;
   margin: auto;
 }
+
+#LOGO{
+  position: fixed;
+  width: 64px;
+  height: auto;
+  top: 10px;
+  left: 10px;
+  opacity: 0.4;
+}
+
+
+.link{
+  text-decoration: underline;
+}
+
+
+
+
+#copyright{
+  margin: auto;
+  font-size: small;
+  color: #9397A2;
+}
+
+.skills{
+  text-align: left;
+
+}
+
+.skills td, .skills th{
+  padding-bottom: 8px;
+  color: #E9ECF1;
+}
+
+.skills td{
+  padding-left: 16px;
+  padding-bottom: 8px;
+  color: #9397A2;
+}
+
+

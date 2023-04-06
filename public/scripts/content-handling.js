@@ -1,6 +1,6 @@
-function changeTab(tab){
+function changeTab(tab, button){
     var i, content, tablinks;
-    var buttons = ['aboutButton', 'workButton', 'contactButton'];
+    var btns = ['aboutButton', 'workButton', 'contactButton'];
 
     content = document.getElementsByClassName("tab");
     for (i = 0; i < content.length; i++){
@@ -9,5 +9,11 @@ function changeTab(tab){
 
     document.getElementById(tab).style.display = "block";
 
+    titles = document.getElementsByClassName("button");
+    for (i = 0; i < titles.length; i++){
+        titles[i].style.textDecoration = "none"
+    }
+
+    document.getElementById(button).style.textDecoration = "underline";
 
 } 
