@@ -1,211 +1,366 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-html{
-  font-family: 'Roboto mono';
-}
 
-body{
-  color: #E9ECF1;
-  background-color: #23232B;
-}
-
-.container{
-  display: flex;
-  top: 0; left: 0; right: 0; bottom: 0;
-  margin-top: 200px;
-  color: #E9ECF1;
-}
-
-.content{
+@media only screen and (max-width: 800px) {
+  html{
+    font-family: 'Roboto mono';
+  }
   
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
+  body{
+    color: #E9ECF1;
+    background-color: #23232B;
+    font-size: 2em;
+  }
+  
+  #LOGO{
+      position: fixed;
+      width: 64px;
+      height: auto;
+      top: 10px;
+      left: 10px;
+      opacity: 0.4;
+  }
+  
+  .container{
+      display: flex;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      color: #E9ECF1;
+  }
+  
+  .cbr_splash{
+      width: 100%;
+  
+  }
+  
+  .pfp{
+      height: 30%;
+      width: 30%;
+      margin: -20% 33% 0 33%;
+      border-radius: 32px;
+      border: #23232B solid 16px;
+  }
+  
+  h1{
+      font-size: 2em;
+  }
+  .nameAndPronouns{
+      display: flex;
+      align-items: baseline;
+  }
+    
+  #pronouns{
+      color: #9397A2;
+      padding-left: 0.25em;
+  }
+  
+  .info a, a{
+      color: #9397A2;
+      text-decoration: none;
+  }
+  
+  a{
+      color: #E9ECF1;
+  }
+  
+  .links {
+      display: none;
+  }
+  
+  .mobilelinks{
+      justify-content: center;
+      display: flex;
+      margin: auto;
+  }
+  
+  .mobilelinks svg{
+      padding: 1em 4em 1em 4em;
+  }
+  
+  .nav{
+      margin: auto;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .nav p {
+      font-size: 1.5em;
+      float: left;
+      text-align: center;
+      padding: 16px 64px 16px 64px;
+  }
+  
+  .tab{
+      display: none;
+  }
+    
+  .button{
+      background-color: #23232B;
+      border-radius: 16px;
+  }
+  
+  .post{
+      margin: 1em;
+      background-color: #36373F;
+      border-radius: 16px;
+      padding: 0.5em;
+      transition: 0.5s;
+  }
+  
+  .date{
+      color: #9397A2;
+    }
+  
+  .tabs{
+      height: 2000px;
+  }
+  
+  
+  
+  #copyright{
+      display: flex;
+      justify-content: center;
+      font-size: 0.8em;
+      color: #9397A2;
+  }
+  
+  
+    
+  input, textarea{
+      width: 80%;
+      height: 2em;
+      margin: auto;
+      display: flex;
+      background-color: #494A53;
+      border: 1px solid #E9ECF1;
+      border-radius: 16px;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #E9ECF1;
+      font-family: 'Roboto mono';
+      outline: none;
+      padding: 0.25em;
+      transition: 0.5s;
+  }
+    
+  input:focus, textarea:focus{
+      background-color: #36373F;
+  }
+  
+  textarea{
+      height: 8em;
+      resize: none;
+  }
+  
+  input[type=submit]{
+      width: 40%;
+  }
 }
 
-.info a{
-  color: #9397A2;
+@media only screen and (min-width: 800px) {
+  html{
+    font-family: 'Roboto mono';
+  }
+  
+  body{
+    color: #E9ECF1;
+    background-color: #23232B;
+  }
+  
+  .container{
+    display: flex;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin-top: 200px;
+    color: #E9ECF1;
+  }
+  
+  .content{
+    
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+  
+  .info a{
+    color: #9397A2;
+  }
+  
+  
+  .nav{
+    margin: auto;
+  }
+  
+  .nav p {
+    float: left;
+    text-align: center;
+    padding: 16px 32px 16px 32px;
+  }
+  
+  .button:hover{
+    background-color: #36373F;
+    border-radius: 16px;
+  }
+  
+  .button{
+    background-color: #23232B;
+    border-radius: 16px;
+    transition: 0.3s;
+  }
+  
+  
+  .links svg{
+    padding-left: 4px;
+  }
+  
+  .mobilelinks{
+    display: none;
+  }
+  
+  .post{
+    margin-top: 16px;
+    background-color: #36373F;
+    border-radius: 16px;
+    padding: 10px 10px 10px 10px;
+    transition: 0.5s;
+  }
+  
+  
+  .post:hover{
+    background-color: #404149;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #E9ECF1;
+  }
+  
+  .images{
+    width: 120%;
+    height: auto;
+    margin-left: -10%;
+  }
+  
+  .cbr_splash{
+    width: 100%;
+    border-radius: 16px;
+  }
+  
+  .pfp{
+    height: 128px;
+    width: 128px;
+    margin-top: -92px;
+    margin-left: 40px;
+    border-radius: 16px;
+    border: #23232B solid 8px;
+  }
+  
+  #about{
+    display: block;
+  }
+  
+  .date{
+    color: #9397A2;
+  }
+  
+  .tab{
+    display: none;
+  }
+  
+  .tabs{
+    height: 1000px;
+  }
+  
+  .nameAndPronouns{
+    display: flex;
+    align-items: baseline;
+  }
+  
+  #pronouns{
+    color: #9397A2;
+    padding-left: 0.25em;
+  }
+  
+  .description{
+    margin-top: 0px;
+  }
+  
+  input, textarea{
+    width: 80%;
+    height: 2em;
+    margin: auto;
+    display: flex;
+    background-color: #494A53;
+    border: 1px solid #E9ECF1;
+    border-radius: 16px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #E9ECF1;
+    font-family: 'Roboto mono';
+    outline: none;
+    padding: 0.25em;
+    transition: 0.5s;
+  }
+  
+  input:focus, textarea:focus{
+    background-color: #36373F;
+  }
+  
+  
+  textarea{
+    height: 8em;
+    resize: none;
+  }
+  
+  input[type=textarea]{
+    height: 3em;
+  }
+  
+  input[type=submit]{
+    width: 40%;
+  }
+  
+  input[type=submit]:hover{
+    background-color: #23232B;
+  }
+  
+  
+  #LOGO{
+    position: fixed;
+    width: 64px;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    opacity: 0.4;
+  }
+  
+  
+  .link{
+    text-decoration: underline;
+  }
+  
+  #copyright{
+    margin: auto;
+    font-size: small;
+    color: #9397A2;
+  }
+  
+  .skills{
+    text-align: left;
+  
+  }
+  
+  .skills td, .skills th{
+    padding-bottom: 8px;
+    color: #E9ECF1;
+  }
+  
+  .skills td{
+    padding-left: 16px;
+    padding-bottom: 8px;
+    color: #9397A2;
+  }
 }
-
-
-.nav{
-  margin: auto;
-}
-
-.nav p {
-  float: left;
-  text-align: center;
-  padding: 16px 32px 16px 32px;
-}
-
-.button:hover{
-  background-color: #36373F;
-  border-radius: 16px;
-}
-
-.button{
-  background-color: #23232B;
-  border-radius: 16px;
-  transition: 0.3s;
-}
-
-
-.links svg{
-  padding-left: 4px;
-}
-
-.post{
-  margin-top: 16px;
-  background-color: #36373F;
-  border-radius: 16px;
-  padding: 10px 10px 10px 10px;
-  transition: 0.5s;
-}
-
-
-.post:hover{
-  background-color: #404149;
-}
-
-a{
-  text-decoration: none;
-  color: #E9ECF1;
-}
-
-.images{
-  width: 120%;
-  height: auto;
-  margin-left: -10%;
-}
-
-.cbr_splash{
-  width: 100%;
-  border-radius: 16px;
-}
-
-.pfp{
-  height: 128px;
-  width: 128px;
-  margin-top: -92px;
-  margin-left: 40px;
-  border-radius: 16px;
-  border: #23232B solid 8px;
-}
-
-#about{
-  display: block;
-}
-
-.date{
-  color: #9397A2;
-}
-
-.tab{
-  display: none;
-}
-
-.tabs{
-  height: 1000px;
-}
-
-.nameAndPronouns{
-  display: flex;
-  align-items: baseline;
-}
-
-#pronouns{
-  color: #9397A2;
-  padding-left: 0.25em;
-}
-
-.description{
-  margin-top: 0px;
-}
-
-input, textarea{
-  width: 80%;
-  height: 2em;
-  margin: auto;
-  display: flex;
-  background-color: #494A53;
-  border: 1px solid #E9ECF1;
-  border-radius: 16px;
-  margin-top: 10px;
-  font-size: 1em;
-  color: #E9ECF1;
-  font-family: 'Roboto mono';
-  outline: none;
-  padding: 0.25em;
-  transition: 0.5s;
-}
-
-input:focus, textarea:focus{
-  background-color: #36373F;
-}
-
-
-textarea{
-  height: 8em;
-  resize: none;
-}
-
-input[type=textarea]{
-  height: 3em;
-}
-
-input[type=submit]{
-  width: 40%;
-}
-
-input[type=submit]:hover{
-  background-color: #23232B;
-}
-
-.tab img{
-  display: flex;
-  width: 100%;
-  padding: 10% 0% 10% 0%;
-  height: auto;
-  margin: auto;
-}
-
-#LOGO{
-  position: fixed;
-  width: 64px;
-  height: auto;
-  top: 10px;
-  left: 10px;
-  opacity: 0.4;
-}
-
-
-.link{
-  text-decoration: underline;
-}
-
-#copyright{
-  margin: auto;
-  font-size: small;
-  color: #9397A2;
-}
-
-.skills{
-  text-align: left;
-
-}
-
-.skills td, .skills th{
-  padding-bottom: 8px;
-  color: #E9ECF1;
-}
-
-.skills td{
-  padding-left: 16px;
-  padding-bottom: 8px;
-  color: #9397A2;
-}
-
 
 
