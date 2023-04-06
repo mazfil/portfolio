@@ -111,13 +111,11 @@
     
                     <div class="tab" id="contact">
                         <div class="post">
-                            <p>This doesnt do much for now, but you can contact me at hey@fmaz.me</p>
-                            <form>
-                                <input type="email" id="email" name="email" placeholder="Email">
-                                <input type="tel" id="phone" name="phone" placeholder="Contact Number">
-                                <input type="text" id="name" name="name" placeholder="Name">
-                                <input type="text" id="subject" name="subject" placeholder="Subject">
-                                <textarea id="message" name="message" placeholder="Message"></textarea>
+                            <p>You can contact me here from this mailto form. You can email me directly at <b>hey@fmaz.me</b></p>
+                            <p>I look forward to hearing from you!</p>
+                            <form action="mailto:hey@fmaz.me" method="get" enctype="text/plain">
+                                <input type="text" id="subject" name="subject" placeholder="Name & Subject">
+                                <textarea id="message" name="body" placeholder="Message"></textarea>
                                 <input type="submit" value="send">
                             </form>
                             

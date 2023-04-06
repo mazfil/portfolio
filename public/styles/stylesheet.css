@@ -131,7 +131,7 @@ input, textarea{
   display: flex;
   background-color: #494A53;
   border: 1px solid #E9ECF1;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-top: 10px;
   font-size: 1em;
   color: #E9ECF1;
@@ -185,9 +185,6 @@ input[type=submit]:hover{
   text-decoration: underline;
 }
 
-
-
-
 #copyright{
   margin: auto;
   font-size: small;
@@ -209,5 +206,6 @@ input[type=submit]:hover{
   padding-bottom: 8px;
   color: #9397A2;
 }
+
 
 
