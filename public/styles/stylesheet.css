@@ -9,24 +9,22 @@ body{
 }
 
 .container{
-  padding-top: 20%;
   display: flex;
   width: 100vw;
-
-  position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-
+  margin-top: 200px;
   color: #E9ECF1;
 }
 
 .content{
+  
   max-width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.info{
+.info a{
   color: #9397A2;
 }
 
@@ -41,7 +39,7 @@ body{
   padding: 16px 32px 16px 32px;
 }
 
-.nav p:hover{
+.button:hover{
   background-color: #36373F;
   border-radius: 16px;
 }
@@ -51,7 +49,7 @@ body{
   padding-left: 4px;
 }
 
-.tab{
+.post{
   margin-top: 16px;
   background-color: #36373F;
   border-radius: 16px;
@@ -59,7 +57,7 @@ body{
 }
 
 
-.tab:hover{
+.post:hover{
   background-color: #404149;
 }
 
@@ -68,3 +66,81 @@ a{
   color: #E9ECF1;
 }
 
+.images{
+  width: 120%;
+  height: auto;
+  margin-left: -10%;
+}
+
+.cbr_splash{
+  width: 100%;
+  height: max-content;
+  border-radius: 16px;
+}
+
+.pfp{
+  height: 128px;
+  width: 128px;
+  margin-top: -96px;
+  margin-left: 48px;
+  border-radius: 16px;
+}
+
+#about{
+  display: block;
+}
+
+
+.tab{
+  display: none;
+}
+
+.bottompadding{
+  height: 256px;
+}
+
+
+input, textarea{
+  width: 80%;
+  height: 2em;
+  margin: auto;
+  display: flex;
+  background-color: #494A53;
+  border: 1px solid #E9ECF1;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #E9ECF1;
+  font-family: 'Roboto mono';
+  outline: none;
+  padding: 0.25em;
+}
+
+input:focus, textarea:focus{
+  background-color: #36373F;
+}
+
+textarea{
+  height: 8em;
+  resize: none;
+}
+
+input[type=textarea]{
+  height: 3em;
+}
+
+input[type=submit]{
+  width: 40%;
+}
+
+input[type=submit]:hover{
+  background-color: #23232B;
+}
+
+.tab img{
+  display: flex;
+  width: 80%;
+  padding: 10% 0% 10% 0%;
+  height: auto;
+  margin: auto;
+}

@@ -15,17 +15,28 @@
         <div class="container">
             <div class="content">
                 <div class="header">
-                <h1>Filip Mazur</h1>
-                <p>A University Student seeking a career in Software Development</p>
-                <div class="info">
-                    <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                    </svg> Australian National University</p>
-                    <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                    </svg> Canberra, Australia</p>
-                </div>
+                    <div class="images">
+                            <img src="assets/IMG_0780_blue.jpg" class="cbr_splash" alt="">
+                        
+                            <img src="assets/bpf.jpg" class="pfp" alt="">
+                        
+                    </div>
+                    
+                    <h1>Filip Mazur</h1>
+                    <p>A University Student seeking a career in Software Development.</p>
+                    <div class="info">
+                        <a href="https://www.anu.edu.au/">
+                            <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                            </svg> Australian National University</p>
+                        </a>
+                        <a href="https://www.google.com.au/maps/place/Australian+Capital+Territory">
+                            <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg> Canberra, Australia</p>
+                        </a>
+                    </div>
                     <div class="links">
                         <a href="https://github.com/mazfil">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -38,33 +49,60 @@
                             </svg>
                         </a>
                     </div>
+
                 </div>
-               
                 <div class="nav">
-                    <p>About</p>
-                    <p>Work</p>
-                    <p>Contact</p>
+                    <p onclick="changeTab('about')" class="button" id="aboutButton">About</p>
+                    <p onclick="changeTab('work')" class="button" id="workButton">Work</p>
+                    <p onclick="changeTab('contact')" class="button" id="contactButton">Contact</p>
                 </div>
-
-                <div class="about">
-                    <div class="tab">
-                        <p>Hey there👋, my name is Filip, welcome to my portfolio.</p>
-                        
-                    </div>
-                    <div class="tab">
-                        <p>Im Currently Studying a Bachelor of Information Technology, at the Australian National University.</p>
-                        </br>
-                        <p>I am majoring in Software Development and have explored many areas. Some of the courses I have studied included Web Design and Development, Data Analysis and Visualisation</p>
-                    </div>
-                </div>
-
-                <div class="work"></div>
-
-                <div class="contact"></div>
                 
+
+                <div class="tabs">
+                    <div class="tab" id="about">
+                        <div class="post">
+                            <p>Hey there👋, my name is Filip, welcome to my portfolio.</p>
+                            
+                        </div>
+                        <div class="post">
+                            <p>Im Currently Studying a Bachelor of Information Technology, at the Australian National University.</p>
+                            <p>I am majoring in Software Development and have explored many areas. Some of the courses I have studied included Web Design and Development, Data Analysis and Visualisation</p>
+                        </div>
+                    </div>
+    
+                    <div class="tab" id="work">
+                        <div class="post">
+                            <img src="assets/gran.png" alt="">
+                            
+                        </div>
+                    </div>
+    
+                    <div class="tab" id="contact">
+                        <div class="post">
+                            <p>This doesnt do much for now, but you can contact me at hey@fmaz.me</p>
+                            <form>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                                <input type="tel" id="phone" name="phone" placeholder="Contact Number">
+                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                                <textarea id="message" name="message" placeholder="Message"></textarea>
+                                <input type="submit" value="send">
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bottompadding"></div>
             </div>
+            
             
         
         </div>
+
+        <script>
+            document.getElementById("about").click();
+        </script>
     </body>
 </html>
