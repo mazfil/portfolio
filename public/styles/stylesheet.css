@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   html{
     font-family: 'Roboto mono';
   }
@@ -157,7 +157,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   html{
     font-family: 'Roboto mono';
   }
