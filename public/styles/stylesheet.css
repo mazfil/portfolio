@@ -39,6 +39,7 @@
       margin: -20% 33% 0 33%;
       border-radius: 32px;
       border: #23232B solid 16px;
+      background-color: #23232B;
   }
   
   h1{
@@ -270,6 +271,7 @@
     margin-left: 40px;
     border-radius: 16px;
     border: #23232B solid 8px;
+    background-color: #23232B;
   }
   
   #about{
