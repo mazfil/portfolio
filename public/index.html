@@ -3,7 +3,9 @@
     <head>
         <title>Filip's Portfolio</title>
         <link rel="stylesheet" href="styles\stylesheet.css">
-        <script type = "text/javascript" src="scripts/content-handling.js"></script>  
+        <script type = "text/javascript" src="scripts/content-handling.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type = "text/javascript" src="scripts/contact-form.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/logo.svg">
     </head>
     <body>
@@ -124,10 +126,11 @@
                         <div class="post">
                             <p>You can contact me here from this mailto form.</p>
                             <p>I look forward to hearing from you!</p>
-                            <form action="mailto:fmaz@duck.com" method="get" enctype="text/plain">
-                                <input type="text" id="subject" name="subject" placeholder="Name & Subject">
-                                <textarea id="message" name="body" placeholder="Message"></textarea>
-                                <input type="submit" value="send">
+                            <form id="contact-form">
+                                <input type="text" id="name" name="user_name" placeholder="Name">
+                                <input type="email" id="email" name="user_email" placeholder="Email">
+                                <textarea id="message" name="user_message" placeholder="Message"></textarea>
+                                <input type="submit" value="Send">
                             </form>
                             
                         </div>
