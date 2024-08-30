@@ -1,0 +1,42 @@
+.container{
+    width: 500px;
+    margin: auto;
+}
+
+.content-navigation{
+    width: 100%;
+    text-align: center;
+}
+
+.content-navigation > button {
+    font-family: "Roboto Mono";
+    font-size: 1em;
+    text-align: center;
+
+    background-color: transparent;
+    color: var(--light);
+    
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    margin: 0 0.1em 0 0.2em;
+    transition-duration: 0.2s;
+}
+
+.content-navigation > button:hover{
+    background-color: var(--dark-shade);
+    transition-duration: 0.2s;
+}
+
+.profile-backsplash{
+    margin-top: 40%;
+    width: 600px;
+    border-radius: 1em;
+    margin-left: -50px;
+}
+
+.profile-memoji{
+    width: 8em;
+    margin-top: -6em;
+    margin-left: -1;
+}

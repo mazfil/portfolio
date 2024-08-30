@@ -1,0 +1,13 @@
+.post{
+    background-color: var(--dark-shade);
+    margin-top: 1em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 1em;
+
+    transition-duration: 0.2s;
+}
+
+.post:hover{
+    background-color: var(--middle);
+    transition-duration: 0.2s;
+}
