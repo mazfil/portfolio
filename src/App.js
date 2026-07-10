@@ -2,7 +2,7 @@ import './App.css';
 function App() {
     return (
         <div>
-            <p>Comming Soon</p>
+            <p>Coming Soon</p>
         </div>
     );
 }
